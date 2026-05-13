@@ -1,5 +1,10 @@
 {
   "servers": {
-    "linear": { "url": "https://mcp.linear.app/mcp" }
+    "linear": { "url": "https://mcp.linear.app/mcp" },
+    "codex": {
+      "type": "stdio",
+      "command": "/opt/homebrew/bin/codex",
+      "args": ["mcp-server"]
+    }
   }
 }
