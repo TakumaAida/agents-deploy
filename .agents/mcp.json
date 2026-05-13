@@ -5,6 +5,11 @@
       "type": "stdio",
       "command": "/opt/homebrew/bin/codex",
       "args": ["mcp-server"]
+    },
+    "claude_code": {
+      "type": "stdio",
+      "command": "/usr/local/bin/claude",
+      "args": ["mcp", "serve", "--stdio"]
     }
   }
 }
