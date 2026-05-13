@@ -1,6 +1,11 @@
 {
   "servers": {
     "linear": { "url": "https://mcp.linear.app/mcp" },
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    },
     "codex": {
       "type": "stdio",
       "command": "/opt/homebrew/bin/codex",
