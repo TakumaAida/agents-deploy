@@ -1,0 +1,12 @@
+allow:
+  - command: ["git", "status"]
+    style: prefix
+  - command: ["git", "diff"]
+    style: prefix
+  - command: ["ls"]
+    style: prefix
+  - command: ["cat"]
+    style: prefix
+deny:
+  - command: ["rm", "-rf", "/"]
+    style: prefix

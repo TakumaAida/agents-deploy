@@ -1,0 +1,20 @@
+model = "gpt-5.5"
+model_reasoning_effort = "high"
+
+# Experimental / opt-in feature flags.
+# Reference: https://developers.openai.com/codex/config-reference  ([features] section)
+[features]
+codex_hooks        = true   # lifecycle hooks loaded from hooks.json (experimental)
+multi_agent        = true   # multi-agent collaboration tools (subagents)
+apps               = true   # ChatGPT Apps / connectors support (experimental)
+memories           = true   # Memories feature
+undo               = true   # undo support
+prevent_idle_sleep = true   # keep machine awake during long runs (experimental)
+
+[agents]
+max_threads = 6
+max_depth   = 1
+
+[profiles.safe]
+sandbox_mode    = "read-only"
+approval_policy = "on-request"

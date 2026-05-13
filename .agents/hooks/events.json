@@ -1,0 +1,17 @@
+{
+  "PreToolUse": [
+    {
+      "matcher": "Bash",
+      "hooks": [
+        { "type": "command", "command": ".claude/hooks/scripts/sample.sh" }
+      ]
+    }
+  ],
+  "Notification": [
+    {
+      "hooks": [
+        { "type": "command", "command": ".claude/hooks/scripts/notify.sh" }
+      ]
+    }
+  ]
+}
